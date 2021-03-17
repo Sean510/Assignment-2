@@ -24,7 +24,7 @@ document.querySelector("#new-task").onsubmit = function() {
     console.log(new_task_html);
     li.innerHTML = new_task_html
     
-    document.querySelector("#task_list").append(li);
+    document.querySelector("#task_list").appendChild(li);
     document.querySelector("#task").value = '';
     
     return false;
