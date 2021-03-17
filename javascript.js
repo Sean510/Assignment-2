@@ -15,13 +15,6 @@ document.querySelector("#new-task").onsubmit = function() {
                       `;
     li.innerHTML = new_task_html
     
-    if(task_status === "finished") {
-        span {
-            text-decoration: line through;
-        }
-    }
-    
-    
     document.querySelector("#task_list").append(li);
     document.querySelector("#task").value = '';
     
