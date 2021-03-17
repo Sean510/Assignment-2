@@ -12,12 +12,16 @@
     </ul>
     <form id="new-task">
       <input id="task" autocomplete="off" autofocus placeholder="Add New Task" type="text">
+      
       <label for="task-priority">Task Priority</label>
       <select id="task-priority" name="task-priority">
         <option value="high">High</option>
         <option value="medium">Medium</option>
         <option value="low">Low</option>
       </select>
+      
+      <label for="task-status">Task Status</label>
+      <input name="task-status" type="radio" value="complete">Complete
       <input id="submit" type="submit">
     </form>
   </body>
