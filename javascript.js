@@ -15,7 +15,7 @@ document.querySelector("#new-task").onsubmit = function() {
                             <span style="text-decoration:line-through"> ${task_priority} </span>
                             <button class="remove"> Remove </button>
                       `;
-    } else if(task_status === 'incomplete'){
+    } else {
          new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
