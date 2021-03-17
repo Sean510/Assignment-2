@@ -10,7 +10,8 @@ document.querySelector("#new-task").onsubmit = function() {
     let task_status = document.querySelector('#task-status');
     let task_priority = document.querySelector('#task-priority').value;
     if(task_status.checked==true) {
-         new_task_html = `
+        task_status.checked = false; 
+        new_task_html = `
                             <span style="text-decoration:line-through"> ${task_text} </span>
                             <span style="text-decoration:line-through"> ${task_priority} </span>
                             <button class="remove"> Remove </button>
