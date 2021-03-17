@@ -7,9 +7,9 @@ document.querySelector("#new-task").onsubmit = function() {
     let new_task_html = "";
     
     let task_text = document.querySelector('#task').value;
-    let task_status = document.querySelector('#task-status').value;
+    let task_status = document.querySelector('#task-status');
     let task_priority = document.querySelector('#task-priority').value;
-    if(task_status === 'finished') {
+    if(task_status.checked==true) {
          new_task_html = `
                             <span style="text-decoration:line-through"> ${task_text} </span>
                             <span style="text-decoration:line-through"> ${task_priority} </span>
