@@ -7,7 +7,7 @@ document.querySelector("#new-task").onsubmit = function() {
     
     let task_text = document.querySelector('#task').value;
     let new_task_html = `
-                            <span> ${task_text} </span>
+                            <span> ${task_text} ${task-priority}</span>
                             <button class="remove"> Remove </button>
                       `;
     li.innerHTML = new_task_html
