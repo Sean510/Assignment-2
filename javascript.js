@@ -21,6 +21,7 @@ document.querySelector("#new-task").onsubmit = function() {
                             <button class="remove"> Remove </button>
                       `;
     }
+    console.log(new_task_html);
     li.innerHTML = new_task_html
     
     document.querySelector("#task_list").append(li);
