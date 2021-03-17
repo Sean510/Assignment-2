@@ -16,7 +16,7 @@ document.querySelector("#new-task").onsubmit = function() {
     li.innerHTML = new_task_html
     
     if(task_status === "finished") {
-        li.innerHTML {
+        span {
             text-decoration: line through;
         }
     }
