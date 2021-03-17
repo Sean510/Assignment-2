@@ -28,7 +28,7 @@ document.querySelector("#new-task").onsubmit = function() {
     document.querySelector("#task_list").appendChild(li);
     document.querySelector("#task").value = '';
     
-    //return false;
+    return false;
 }
   
   document.addEventListener('click', function(event) {
