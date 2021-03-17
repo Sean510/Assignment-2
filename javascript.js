@@ -9,15 +9,16 @@ document.querySelector("#new-task").onsubmit = function() {
     let task_text = document.querySelector('#task').value;
     let task_status = document.querySelector('#task-status');
     let task_priority = document.querySelector('#task-priority').value;
-    if(task_status.checked==true) {
+    if(task_status.value == 'completed') {
         task_status.checked = false; 
         new_task_html = `
                             <span style="text-decoration:line-through"> ${task_text} </span>
                             <span style="text-decoration:line-through"> ${task_priority} </span>
                             <button class="remove"> Remove </button>
                       `;
-    } else {
-         new_task_html = `
+    } else if( task_status.value == 'pending' {
+              task_status.checked = false;
+              new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
                             <button class="remove"> Remove </button>
