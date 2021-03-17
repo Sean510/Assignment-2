@@ -16,7 +16,7 @@ document.querySelector("#new-task").onsubmit = function() {
                             <span style="text-decoration:line-through"> ${task_priority} </span>
                             <button class="remove"> Remove </button>
                       `;
-    } else if( task_status.value == 'pending') {
+    } else {
               task_status.checked = false;
               new_task_html = `
                             <span> ${task_text} </span>
