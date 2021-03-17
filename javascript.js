@@ -7,7 +7,6 @@ document.querySelector("#new-task").onsubmit = function() {
     
     let task_text = document.querySelector('#task').value;
     let task_priority = document.querySelector('#task-priority').value;
-    let task_status = document.querySelector('#task-status').value;
     let new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
