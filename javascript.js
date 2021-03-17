@@ -22,8 +22,8 @@ document.querySelector("#new-task").onsubmit = function() {
         new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
-                            <input id="markAsComplete" name="markAsComplete" type"radio" value="completed">
                             <label for="markAsComplete"> Completed </label>
+                            <input id="markAsComplete" name="markAsComplete" type"radio" value="completed">
                             <button class="remove"> Remove </button>
                       `;
     }
