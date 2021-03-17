@@ -22,6 +22,7 @@ document.querySelector("#new-task").onsubmit = function() {
         new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
+                            <input type="radio" id="pendingDone" name="pendingDone"> Completed
                             <button class="remove"> Remove </button>
                       `;
     }
