@@ -35,11 +35,11 @@ document.querySelector("#new-task").onsubmit = function() {
     return false;
 }
   
-  document.addEventListener('click', function(event) {
-      element = event.target;
-      if(element.className === 'markAsComplete') {
-          element.parentElement.strike();
-      }
+  //document.addEventListener('click', function(event) {
+      //element = event.target;
+      //if(element.className === 'markAsComplete') {
+          //element.parentElement.strike();
+      //}
     
   document.addEventListener('click', function(event) {
     element = event.target;
