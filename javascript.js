@@ -45,5 +45,6 @@ document.querySelector("#new-task").onsubmit = function() {
       
     if(element.className === 'mark') {
       element.parentElement.style.textDecoration = "line-through";
+    }
  })
 });
