@@ -22,7 +22,7 @@ document.querySelector("#new-task").onsubmit = function() {
         new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
-                            <input type="radio" id="pendingDone" name="pendingDone"> Completed
+                            <button class="markAsComplete> Completed </button>
                             <button class="remove"> Remove </button>
                       `;
     }
@@ -35,6 +35,12 @@ document.querySelector("#new-task").onsubmit = function() {
     return false;
 }
   
+  document.addEventListener('click', function(event) {
+      element = event.target;
+      if(element.className === 'markAsComplete') {
+          element.parentElement.strike();
+      }
+    
   document.addEventListener('click', function(event) {
     element = event.target;
     if(element.className === 'remove') {
