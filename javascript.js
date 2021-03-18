@@ -42,5 +42,9 @@ document.querySelector("#new-task").onsubmit = function() {
     if(element.className === 'remove') {
       element.parentElement.remove();
     }
+      
+    if(element.className === 'mark') {
+      li.innerHTML = "abc";
+    }
  })
 });
