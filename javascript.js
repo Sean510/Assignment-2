@@ -44,7 +44,6 @@ document.querySelector("#new-task").onsubmit = function() {
     }
       
     if(element.className === 'mark') {
-      element.parentElement.remove();
-    }
+      element.parentElement.style.textDecoration = "line-through";
  })
 });
