@@ -44,7 +44,7 @@ document.querySelector("#new-task").onsubmit = function() {
     }
       
     if(element.className === 'mark') {
-      li.innerHTML = "abc";
+      element.parentElement.strike();
     }
  })
 });
