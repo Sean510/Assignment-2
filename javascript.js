@@ -22,7 +22,7 @@ document.querySelector("#new-task").onsubmit = function() {
         new_task_html = `
                             <span> ${task_text} </span>
                             <span> ${task_priority} </span>
-                            <button class="markAsComplete> Completed </button>
+                            <button class="mark"> Completed </button>
                             <button class="remove"> Remove </button>
                       `;
     }
@@ -35,11 +35,7 @@ document.querySelector("#new-task").onsubmit = function() {
     return false;
 }
   
-  //document.addEventListener('click', function(event) {
-      //element = event.target;
-      //if(element.className === 'markAsComplete') {
-          //element.parentElement.strike();
-      //}
+ 
     
   document.addEventListener('click', function(event) {
     element = event.target;
