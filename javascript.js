@@ -44,7 +44,7 @@ document.querySelector("#new-task").onsubmit = function() {
     }
       
     if(element.className === 'mark') {
-      element.parentElement.strike();
+      element.parentElement = new_task_html.strike();
     }
  })
 });
