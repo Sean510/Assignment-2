@@ -3,3 +3,11 @@ body {
   text-align: center;
   font-family: courier new;
 }
+
+.remove {
+  background-color: red;
+}
+
+.mark {
+  background-color: green;
+}
