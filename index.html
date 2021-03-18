@@ -20,23 +20,24 @@
   <body>
     <div class="container"> 
       <h1 class="page-header"> ToDo List </h1>
+    
+      <ul id="task_list">
+      </ul>
+      <form id="new-task">
+        <input id="task" autocomplete="off" autofocus placeholder="Add New Task" type="text">
+      
+        <label for="task-priority">Task Priority</label>
+        <select id="task-priority" name="task-priority">
+          <option value="- Priority: High">High</option>
+          <option value="- Priority: Medium">Medium</option>
+          <option value="- Priority: Low">Low</option>
+        </select>
+      
+        <label for="task-status">Task Status:</label>
+        <input id ="task-completed" name="task-status" type="radio" value="completed">Completed
+        <input id ="task-pending" name="task-status" type="radio" value="pending">Pending
+        <input id="submit" type="submit">
+      </form>
     </div>
-    <ul id="task_list">
-    </ul>
-    <form id="new-task">
-      <input id="task" autocomplete="off" autofocus placeholder="Add New Task" type="text">
-      
-      <label for="task-priority">Task Priority</label>
-      <select id="task-priority" name="task-priority">
-        <option value="- Priority: High">High</option>
-        <option value="- Priority: Medium">Medium</option>
-        <option value="- Priority: Low">Low</option>
-      </select>
-      
-      <label for="task-status">Task Status:</label>
-      <input id ="task-completed" name="task-status" type="radio" value="completed">Completed
-      <input id ="task-pending" name="task-status" type="radio" value="pending">Pending
-      <input id="submit" type="submit">
-    </form>
   </body>
 </html>
